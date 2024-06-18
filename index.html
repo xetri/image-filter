@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <span>Image Filter</span>
+        </header>
+
+        <div id="main">
+            <div>
+                <label for="upload-img">Pick an Image</label>
+                <input name="upload-img" id="upload-img" accept="image/*" type="file">
+            </div>
+
+            <div id="preview">
+                <canvas></canvas>
+            </div>
+
+            <div id="options">
+                <div class="controls">
+                    <select name="transform" id="transform" value="ascii">
+                        <option value="original">Original</option>
+                        <option value="ascii">ASCII</option>
+                        <option value="invert">Invert</option>
+                        <option value="grayscale">Grayscale</option>
+                        <option value="redish">Redish</option>
+                        <option value="greenish">Greenish</option>
+                        <option value="bluish">Bluish</option>
+                    </select>
+                </div>
+
+                <div id="save">Save to Device</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
